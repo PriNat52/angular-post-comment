@@ -1,0 +1,8 @@
+<h2>Post List</h2>
+<ul *ngFor="let i of post">
+  <app-post
+    [id]="i.id"
+    [body]="i.body"
+    (clickPost)="onDisplay($event)"
+  ></app-post>
+</ul>

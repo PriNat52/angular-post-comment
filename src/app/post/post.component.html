@@ -1,0 +1,12 @@
+<li>
+  <p (click)="onClicking()">{{ id }}. {{ body }}</p>
+</li>
+
+<div *ngIf="comment">
+  <ul *ngFor="let c of list">
+    <app-comments [cid]="c.body"> </app-comments>
+    <!-- <li>
+      {{ c.body }}
+    </li> -->
+  </ul>
+</div>
